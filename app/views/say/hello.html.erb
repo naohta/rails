@@ -1,7 +1,25 @@
 <h1>Say#hello</h1>
-<h2>Railsからこんにちは!</h2>
+<h2>Hello from Rails!</h2>
 <p>Find me in app/views/say/hello.html.erb</p>
-<p>It is <%= @naoTime %> now.</P>
+<p>It is <%= @naoTime %> now.</p>
+<p>And 1 hour later is <%= 1.hour.from_now %> .</P>
 <p>
-  <a href="/say/goodbye">will say goodbye..</a>
+<%= link_to "we will go to goodbye page", say_goodbye_path %>
+</p>
+<p>
+1 + 2 = <%= 1+2 %>
+</p>
+<p>
+Perhaps, you're <%= "cow" + "boy" %>.
+</p>
+
+<p>
+<h2>The file list</h2>
+<ul>
+<% for f in @files %>
+  <li>
+  filename: <%= f %>
+  </li>
+<% end %>
+</ul>
 </p>
