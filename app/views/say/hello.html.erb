@@ -14,12 +14,11 @@ Perhaps, you're <%= "cow" + "boy" %>.
 </p>
 
 <p>
-<h2>The file list</h2>
-<ul>
-<% for f in @files %>
-  <li>
-  filename: <%= f %>
-  </li>
-<% end %>
-</ul>
+<hr/>
+<h2>Gemfile</h2>
+  <% for line in @lines %>
+    <%= line %><br/>
+  <% end %>
+<hr/>
 </p>
+

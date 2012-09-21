@@ -5,3 +5,14 @@
 <p>
   <%= link_to "we will go to hello page.", say_hello_path %>
 </p>
+
+<p>
+<h2>The file list</h2>
+<ul>
+<% for f in @files %>
+  <li>
+  filename: <%= f %>
+  </li>
+<% end %>
+</ul>
+</p>

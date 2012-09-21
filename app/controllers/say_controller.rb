@@ -1,9 +1,10 @@
 class SayController < ApplicationController
   def hello
     @naoTime = Time.now
-    @files = Dir.glob('*')
+    @lines = File.open('Gemfile')
   end
 
   def goodbye
+    @files = Dir.glob('*')
   end
 end
