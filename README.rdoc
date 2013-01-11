@@ -1,3 +1,10 @@
+= Hi, This is my Hello rails app.
+
+Ya! I'm beginner in Ruby.
+(The followings are made by Rails himself)
+
+
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
